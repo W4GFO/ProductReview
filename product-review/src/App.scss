@@ -1,0 +1,11 @@
+div#root {
+	min-width: 100vw;
+	min-height: 100vh;
+	background-color: #EFEFEF;
+
+	display: flex;
+	align-items: center; //Centers vertically
+	justify-content: center; //Centers horizontally
+
+	overflow: hidden;
+}
