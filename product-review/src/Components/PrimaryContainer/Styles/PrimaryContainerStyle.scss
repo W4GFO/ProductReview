@@ -1,7 +1,7 @@
 @import '../../AllComponentsStyle.scss';
 
 .primary-container {
-	background-color: #C2C2C2;
+	//background-color: chartreuse;//#C2C2C2;
 
 	display: grid;
 }
@@ -10,6 +10,8 @@
 .primary-container {
 	width: 94vw;
 	//height: 100vh;
+	min-height: 300px;
+	margin-top: 6vh;
 
 	grid-template-columns: 1fr;
 	grid-template-rows: 0.8fr 1fr;
@@ -26,6 +28,8 @@
 
 		min-width: 628px;
 		max-width: 704px;
+
+		margin-top: 0vh;
 
 		grid-template-rows: 1fr;
 		grid-template-columns: 1fr 1fr;

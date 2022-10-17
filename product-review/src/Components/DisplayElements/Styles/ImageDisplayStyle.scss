@@ -3,12 +3,13 @@
 //Unchaning properties
 .image-display {
 	background-size: cover;
-	background-color: #2A765E;
+	//background-color: pink;// #2A765E;
 }
 
 //Mobile Specific properties
 .image-display {
 	height: 100%;
+	border-radius: $BorderRadius $BorderRadius 0px 0px;
 	background-image: url(../../../Images/imageMobile.jpg);
 }
 
@@ -19,5 +20,7 @@
 		height: 100%;
 		
 		background-image: url(../../../Images/imageDesktop.jpg);
+
+		border-radius: $BorderRadius 0px 0px $BorderRadius;
 	}
 }

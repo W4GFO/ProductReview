@@ -3,11 +3,12 @@
 //This is all the content's overall frame. ie: All the content on the page
 .content-display {
 	display: flex;
-	gap: 25px;
 	flex-direction: column;
+	gap: 25px;
 
 	width: 100%;
 	height: 100%;
+
 	background-color: $White;
 
 	padding-left: 16px;
@@ -19,13 +20,13 @@
 //This is the grow/shring of the top level flex-items. ie: All text and the button
 .content-flex-item {
 	flex: 1 0 0;
-	background-color: orange;
+	//background-color: orange;
 }
 
 .article-container {
 	display: flex;
-	gap:10px;
 	flex-direction: column;
+	gap:10px;
 
 	align-items: flex-start;
 }
@@ -104,4 +105,10 @@
 .btn-icon {
 	margin-right: 12px;
 	font-size: 18px;
+}
+
+@media screen and (min-width:$PrimaryBreakPoint) {
+	.content-display {
+		border-radius: 0px $BorderRadius $BorderRadius 0px;
+	}
 }

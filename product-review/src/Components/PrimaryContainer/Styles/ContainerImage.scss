@@ -5,9 +5,10 @@
 
 .image-container {
 	grid-area: image-display;
-	background-color: chartreuse;
+	//background-color: palevioletred;
 }
 
 @media screen and (min-width:$PrimaryBreakPoint) {
-
+	.image-container {
+	}
 }
