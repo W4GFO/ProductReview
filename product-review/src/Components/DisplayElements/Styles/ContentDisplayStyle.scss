@@ -1,1 +1,104 @@
 @import '../../AllComponentsStyle.scss';
+
+//This is all the content's overall frame. ie: All the content on the page
+.content-display {
+	display: flex;
+	gap: 25px;
+	flex-direction: column;
+
+	width: 100%;
+	background-color: $White;
+
+	padding-left: 16px;
+	padding-right: 24px;
+}
+
+//This is the grow/shring of the top level flex-items. ie: All text and the button
+.content-flex-item {
+	flex: 1 0 0;
+	background-color: orange;
+}
+
+.article-container {
+	display: flex;
+	gap:10px;
+	flex-direction: column;
+
+	align-items: flex-start;
+}
+
+.article-flex-item {
+	flex: 1 0 0;
+}
+
+.product-type, .product-message {
+	color: $DarkGrayishBlue;
+	font-family: Montserrat, 'Segoe UI', 'Roboto', 'Oxygen',
+	'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+	sans-serif;
+}
+
+.product-title, .price-items {
+	font-family: Fraunces, 'Segoe UI', 'Roboto', 'Oxygen',
+	'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+	sans-serif;
+}
+
+.product-type {
+	margin-top: 16px;
+	text-transform: uppercase;
+	font-weight: $FontWeightMedium;
+}
+
+.product-title {
+	font-size: 2.2em;
+	font-weight: bolder;
+}
+
+.product-message {
+	line-height: 1.6em;
+	font-weight: $FontWeightHeavy;
+}
+
+.price-items {
+	width: 100%;
+	display: flex;
+	margin-top: 16px;
+	align-items: center;
+	flex-direction: row;
+}
+
+.price-flex-item {
+	flex: 1 0 0;
+}
+
+.new-price {
+	color: $DarkCyan;
+	font-size: 2.8em;
+	font-weight: bolder;
+}
+
+.old-price {
+	margin-left: 10%;
+	color:$DarkGrayishBlue;
+	text-decoration: line-through;
+	font-weight: $FontWeightMedium;
+}
+
+.add-cart-btn {
+	height: 48px;
+	border: none;
+	border-radius: 12px;
+	margin-bottom: 24px;
+	background-color: $DarkCyan;
+
+	//Button Font properties
+	color: $White;
+	font-size: 1.2em;
+	font-weight: bolder;
+}
+
+.btn-icon {
+	margin-right: 12px;
+	font-size: 18px;
+}
