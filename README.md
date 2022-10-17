@@ -19,8 +19,10 @@ This project requires the following two installs:
 
 ## General Architectural layout:
 
+### Mobile Component layout
 ![mobile](./OutlineMobile.png)
 
+### Desktop Component layout
 ![desktop](./OutlineDesktop.png)
 
 From the project directory, to open the project in a local browser you can run:
@@ -29,15 +31,28 @@ From the project directory, to open the project in a local browser you can run:
 > npm start
 ```
 
-### `npm start`
+## Structural layout and logig:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+	- src
+		index.tsx //The primary react-app standard starting code
+		App.tsx //Sets up the initial page and creates a flex-box to center the main UI
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+		- Components
+			- PrimaryContainer
+				ContainerContent.tsx // The grid cell which will hold the content display component 
+				ContainerImage.tsx // The grid cell which will hold the image display component
+				PrimaryContainer.tsx //Sets up the 2-row (mobile) / 2-column (desktop) grid
 
-## Required Installs:
+			- DisplayElements
+				ContentDisply.tsx //The component which lays out the textual information 
+				ImageDisplay.tsx  //The component which lays out the image 
+
+	### Logic of the architecture
+
+	Have the components which need to be worked through to iron out the layout isolated from the content.
+
+	Then, have the components which display data isolated from issues with the overall layout of the primary page.
+
 
 
 
