@@ -1,3 +1,5 @@
+@import './Components/AllComponentsStyle.scss';
+
 div#root {
 	min-width: 100vw;
 	min-height: 100vh;
@@ -8,4 +10,27 @@ div#root {
 	justify-content: center; //Centers horizontally
 
 	overflow: hidden;
+}
+
+main {
+	overflow:hidden;
+
+	border: 1px solid black;
+
+	background-color: green;
+}
+
+//Mobile Specific properity settings
+main {
+	//Kind'a just making this thing a square.
+	width: 94vw;
+	height: 100vh;
+}
+
+@media screen and (min-width:$PrimaryBreakPoint) {
+	//Desktop Specific properity settings
+	main{
+		width: 80vw;
+		height: 30vw;
+	}
 }

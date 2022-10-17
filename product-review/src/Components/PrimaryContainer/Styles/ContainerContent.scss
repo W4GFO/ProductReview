@@ -1,0 +1,13 @@
+@import '../../AllComponentsStyle.scss';
+
+.item {
+}
+
+.content-container {
+	grid-area: content-display;
+	background-color: blue;
+}
+
+@media screen and (min-width:$PrimaryBreakPoint) {
+
+}

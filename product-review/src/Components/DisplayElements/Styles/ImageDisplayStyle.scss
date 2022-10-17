@@ -1,0 +1,23 @@
+@import '../../AllComponentsStyle.scss';
+
+//Unchaning properties
+.image-display {
+	background-size: cover;
+	background-color: #2A765E;
+}
+
+//Mobile Specific properties
+.image-display {
+	height: 100%;
+	background-image: url(../../../Images/imageMobile.jpg);
+}
+
+@media screen and (min-width:$PrimaryBreakPoint) {
+	//Desktop Specific properties
+	.image-display {
+		width: 100%;
+		height: 100%;
+		
+		background-image: url(../../../Images/imageDesktop.jpg);
+	}
+}
