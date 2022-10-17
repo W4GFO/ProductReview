@@ -2,9 +2,32 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Specifically:
 
-In the project directory, you can run:
+```
+> npm create-react-app product-review --template typescript
+```
+
+## Additional NPM installs:
+
+This project requires the following two installs:
+
+```
+> npm install sass
+> npm install react-icons
+```
+
+## General Architectural layout:
+
+![mobile](./OutlineMobile.png)
+
+![desktop](./OutlineDesktop.png)
+
+From the project directory, to open the project in a local browser you can run:
+
+```
+> npm start
+```
 
 ### `npm start`
 
@@ -16,12 +39,7 @@ You will also see any lint errors in the console.
 
 ## Required Installs:
 
-This project requires the following two installs:
 
-```
-> npm install sass
-> npm install react-icons
-```
 
 ### `npm test`
 
