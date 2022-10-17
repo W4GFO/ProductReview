@@ -53,7 +53,13 @@ From the project directory, to open the project in a local browser you can run:
 
 	Then, have the components which display data isolated from issues with the overall layout of the primary page.
 
+	Though this architecture and the number of components may seem overkill for this project, I want to start designing as if the project were larger.  Not certain this is the right concept at this point or not.
 
+### Question/Concerns regarding the project.
+
+	In the /src/Components/DisplayElements/Styles/ContentDisplayStyle.scss
+
+	- On lines 39 and 45, I'm certain there is a cleaner way to set the fonts for the separte tags, but I wasn't certain if this was the right way to do it or if these two 'font-family' configurations could be combined.
 
 
 ### `npm test`
