@@ -1,0 +1,13 @@
+@import '../../AllComponentsStyle.scss';
+
+.item {
+}
+
+.content-container {
+	grid-area: content-display;
+	border-radius: 0px 0px $BorderRadius $BorderRadius;
+}
+
+@media screen and (min-width:$PrimaryBreakPoint) {
+
+}

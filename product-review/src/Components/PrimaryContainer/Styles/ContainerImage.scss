@@ -1,0 +1,13 @@
+@import '../../AllComponentsStyle.scss';
+
+.item {
+}
+
+.image-container {
+	grid-area: image-display;
+}
+
+@media screen and (min-width:$PrimaryBreakPoint) {
+	.image-container {
+	}
+}

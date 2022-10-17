@@ -1,0 +1,40 @@
+@import './Components/AllComponentsStyle.scss';
+
+div#root {
+	min-width: 100vw;
+	min-height: 100vh;
+	background-color: #EFEFEF;
+
+	display: flex;
+	align-items: center; //Centers vertically
+	justify-content: center; //Centers horizontally
+
+	overflow: hidden;
+}
+
+main {
+	overflow:hidden;
+
+	border-radius: $BorderRadius;
+}
+
+//Mobile Specific properity settings
+main {
+	//Kind'a just making this thing a square.
+	width: 94vw;
+	height: 100vh;
+}
+
+@media screen and (min-width:$PrimaryBreakPoint) {
+	//Desktop Specific properity settings
+	main{
+		width: 80vw;
+		height: 50vw;
+
+		min-width: 628px;
+		max-width: 704px;
+
+		max-height: 455px;
+		min-height: 355px;
+	}
+}
