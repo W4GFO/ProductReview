@@ -59,7 +59,11 @@ From the project directory, to open the project in a local browser you can run:
 
 	In the /src/Components/DisplayElements/Styles/ContentDisplayStyle.scss
 
-	- On lines 39 and 45, I'm certain there is a cleaner way to set the fonts for the separte tags, but I wasn't certain if this was the right way to do it or if these two 'font-family' configurations could be combined.
+	- On lines 39 and 45, I'm certain there is a cleaner way to set the fonts for the separte tags, but 
+	
+	I wasn't certain if this was the right way to do it or if these two 'font-family' configurations 
+	
+	could be combined.
 
 
 ### `npm test`
