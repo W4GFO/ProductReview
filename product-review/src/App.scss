@@ -15,8 +15,7 @@ div#root {
 main {
 	overflow:hidden;
 
-	border: 1px solid black;
-
+	border-radius: $BorderRadius;
 	background-color: green;
 }
 
@@ -31,6 +30,12 @@ main {
 	//Desktop Specific properity settings
 	main{
 		width: 80vw;
-		height: 30vw;
+		height: 50vw;
+
+		min-width: 628px;
+		max-width: 704px;
+
+		max-height: 455px;
+		min-height: 355px;
 	}
 }
