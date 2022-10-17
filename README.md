@@ -47,7 +47,7 @@ From the project directory, to open the project in a local browser you can run:
 				ContentDisply.tsx //The component which lays out the textual information 
 				ImageDisplay.tsx  //The component which lays out the image 
 
-	### Logic of the architecture
+### Logic of the architecture
 
 	Have the components which need to be worked through to iron out the layout isolated from the content.
 
