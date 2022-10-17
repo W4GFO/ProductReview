@@ -1,15 +1,12 @@
 @import '../../AllComponentsStyle.scss';
 
 .primary-container {
-	//background-color: chartreuse;//#C2C2C2;
-
 	display: grid;
 }
 
 //Mobile Specific Container Settings
 .primary-container {
 	width: 94vw;
-	//height: 100vh;
 	min-height: 300px;
 	margin-top: 6vh;
 

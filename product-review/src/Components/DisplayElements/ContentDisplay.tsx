@@ -6,11 +6,8 @@ import * as BsIcons from 'react-icons/bs'
 type ContentDisplayProps = {}
 
 export const ContentDisplay = (props: ContentDisplayProps) => {
-
 	const priceItemFlexItemClassname:string = 'price-flex-item'
-
 	const contentFlexItemClassname:string = 'content-flex-item'
-
 	const articleFlexItemClassname:string = 'article-flex-item'
 
 	return (
