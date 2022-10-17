@@ -2,19 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Specifically:
 
-In the project directory, you can run:
+```
+> npm create-react-app product-review --template typescript
+```
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-## Required Installs:
+## Additional NPM installs:
 
 This project requires the following two installs:
 
@@ -22,6 +16,55 @@ This project requires the following two installs:
 > npm install sass
 > npm install react-icons
 ```
+
+## General Architectural layout:
+
+### Mobile Component layout
+![mobile](./OutlineMobile.png)
+
+### Desktop Component layout
+![desktop](./OutlineDesktop.png)
+
+From the project directory, to open the project in a local browser you can run:
+
+```
+> npm start
+```
+
+## Structural layout and logig:
+
+	- src
+		index.tsx //The primary react-app standard starting code
+		App.tsx //Sets up the initial page and creates a flex-box to center the main UI
+
+		- Components
+			- PrimaryContainer
+				ContainerContent.tsx // The grid cell which will hold the content display component 
+				ContainerImage.tsx // The grid cell which will hold the image display component
+				PrimaryContainer.tsx //Sets up the 2-row (mobile) / 2-column (desktop) grid
+
+			- DisplayElements
+				ContentDisply.tsx //The component which lays out the textual information 
+				ImageDisplay.tsx  //The component which lays out the image 
+
+### Logic of the architecture
+
+	Have the components which need to be worked through to iron out the layout isolated from the content.
+
+	Then, have the components which display data isolated from issues with the overall layout of the primary page.
+
+	Though this architecture and the number of components may seem overkill for this project, I want to start designing as if the project were larger.  Not certain this is the right concept at this point or not.
+
+### Question/Concerns regarding the project.
+
+	In the /src/Components/DisplayElements/Styles/ContentDisplayStyle.scss
+
+	- On lines 39 and 45, I'm certain there is a cleaner way to set the fonts for the separte tags, but 
+	
+	I wasn't certain if this was the right way to do it or if these two 'font-family' configurations 
+	
+	could be combined.
+
 
 ### `npm test`
 
@@ -53,3 +96,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
