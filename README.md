@@ -1,2 +1,0 @@
-# ProductReview
-A FrontEndMento project
